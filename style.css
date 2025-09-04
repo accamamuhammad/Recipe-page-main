@@ -1,1 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  box-sizing: border-box;
+}
 
+/*! Fonts */
+/*? young serif  */
+@font-face {
+  font-family: "young-serif-regular";
+  src: url(./fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+/*? Outfit */
+@font-face {
+  font-family: "outfit-regular";
+  src: url(./fonts/outfit/static/Outfit-Regular.ttf);
+}
+@font-face {
+  font-family: "outfit-bold";
+  src: url(./fonts/outfit/static/Outfit-Bold.ttf);
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 1.65rem;
+  font-family: "young-serif-regular";
+}
+
+h2 {
+  font-family: "outfit-bold";
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1.65rem;
+  margin-bottom: 0.8rem;
+  color: hsl(14, 45%, 36%);
+  font-family: "young-serif-regular";
+}
+
+p {
+  line-height: 1.45rem;
+  font-family: "outfit-regular";
+  color: hsl(30, 10%, 34%);
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  max-height: fit;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  font-family: "outfit-regular";
+}
+
+.divider {
+  width: fit;
+  margin: 0 1.5rem;
+  height: 1px;
+  margin-top: 5px;
+  background-color: hsl(34, 8%, 83%);
+}
+.table-divider {
+  width: 100%;
+  height: 1px;
+  margin: 5px 0;
+  background-color: hsl(34, 8%, 83%);
+}
+
+/*! Main Container  */
+main {
+  width: 100%;
+  gap: 1.8rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/*! Main Image  */
+.main-image {
+  width: 100%;
+}
+
+/*! Main Header  */
+.main-header {
+  padding: 0 1.5rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+}
+
+/*! Preparation-time */
+.preparation-time {
+  margin: 0 1.5rem;
+  padding: 1.5rem 2rem;
+  border-radius: 0.5rem;
+  background-color: hsl(330, 100%, 98%);
+}
+.preparation-time-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.8em;
+  color: hsl(330, 56%, 42%);
+}
+.preparation-time-list {
+  padding-left: 1rem;
+  gap: 0.65em;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+.preparation-time-list li {
+  color: hsl(30, 10%, 34%);
+  padding-left: 1em;
+}
+.preparation-time-list strong {
+  color: hsl(30, 10%, 34%);
+  font-family: "outfit-bold";
+}
+.preparation-time-list li,
+.preparation-time-list strong {
+  font-size: 0.95rem;
+}
+
+/*! ingredients  */
+.ingredients {
+  padding: 0 1.5rem;
+}
+.ingredients ul {
+  gap: 0.65rem;
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+}
+.ingredients li {
+  padding-left: 1em;
+  line-height: 1.45rem;
+  font-family: "outfit-regular";
+  color: hsl(30, 10%, 34%);
+}
+
+/*! instructions */
+.instructions {
+  padding: 0 1.5rem;
+}
+.instructions ol {
+  gap: 0.65rem;
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+}
+.instructions li {
+  padding-left: 1em;
+  line-height: 1.45rem;
+  font-family: "outfit-regular";
+  color: hsl(30, 10%, 34%);
+}
+.instructions strong {
+  color: hsl(30, 10%, 34%);
+  font-family: "outfit-bold";
+}
+
+/*! nutrition */
+.nutrition {
+  padding: 0 1.5rem;
+}
+
+.nutrition > p {
+  margin-bottom: 1rem;
+  line-height: 1.5rem;
+  font-family: "outfit-regular";
+  color: hsl(30, 10%, 34%);
+}
+
+.table {
+  width: 100%;
+}
+.table > div {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: space-evenly;
+}
+.table h4 {
+  margin-top: 0.65rem;
+  font-family: "outfit-regular";
+  color: hsl(30, 10%, 34%);
+}
+.table p {
+  margin-top: 0.65rem;
+  margin-bottom: 0.8rem;
+  color: hsl(14, 45%, 36%);
+  font-family: "outfit-bold";
+}
+
+/*! attribution */
+.attribution {
+  width: 100%;
+  text-align: center;
+}
+.attribution p {
+  color: hsl(30, 10%, 34%);
+}
+.attribution a {
+  color: hsl(14, 45%, 36%);
+}
+.attribution p,
+.attribution a {
+  font-size: 0.9rem;
+}
+
+/*! Desktop Screen Size  */
+@media (min-width: 500px) {
+  body {
+    background-color: hsl(30, 54%, 90%);
+  }
+  main {
+    min-width: 450px;
+    max-width: 650px;
+    padding: 1.15rem;
+    margin: 0.5rem 0;
+    border-radius: 1rem;
+    background-color: white;
+  }
+  .main-image {
+    border-radius: 1rem;
+  }
+  .main-header {
+    padding: 0 1rem;
+  }
+}

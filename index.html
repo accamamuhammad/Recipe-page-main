@@ -17,13 +17,19 @@
     <title>Frontend Mentor | Recipe page</title>
   </head>
   <body>
+    <main>
+  <!-- ================= IMAGE ================= -->
+   <img src="./assets/images/image-omelette.jpeg" alt="" class="main-image">
+
     <!-- ================= HEADER ================= -->
-    <h1 class="recipe-title">Simple Omelette Recipe</h1>
-    <p class="recipe-description">
+    <section class="main-header">
+      <h1 class="recipe-title">Simple Omelette Recipe</h1>
+     <p class="recipe-description">
       An easy and quick dish, perfect for any meal. This classic omelette
       combines beaten eggs cooked to perfection, optionally filled with your
       choice of cheese, vegetables, or meats.
-    </p>
+     </p>
+    </section>
 
     <!-- ================= PREPARATION TIME ================= -->
     <section class="preparation-time">
@@ -37,8 +43,8 @@
 
     <!-- ================= INGREDIENTS ================= -->
     <section class="ingredients">
-      <h3 class="ingredients-title">Ingredients</h3>
-      <ul class="ingredients-list">
+      <h3>Ingredients</h3>
+      <ul>
         <li>2-3 large eggs</li>
         <li>Salt, to taste</li>
         <li>Pepper, to taste</li>
@@ -48,6 +54,8 @@
         </li>
       </ul>
     </section>
+
+   <div class="divider"></div>
 
     <!-- ================= INSTRUCTIONS ================= -->
     <section class="instructions">
@@ -84,39 +92,49 @@
       </ol>
     </section>
 
+    <div class="divider"></div>
+
     <!-- ================= NUTRITION ================= -->
     <section class="nutrition">
       <h3 class="nutrition-title">Nutrition</h3>
-      <p class="nutrition-description">
+      <p>
         The table below shows nutritional values per serving without the
         additional fillings.
       </p>
-      <table>
-        <tr>
-          <th>Calories</th>
-          <td>277kcal</td>
-        </tr>
-        <tr>
-          <th>Carbs</th>
-          <td>0g</td>
-        </tr>
-        <tr>
-          <th>Protein</th>
-          <td>20g</td>
-        </tr>
-        <tr>
-          <th>Fat</th>
-          <td>22g</td>
-        </tr>
-      </table>
+      <div class="table">
+        <div>
+          <h4>Calories</h4>
+          <p>277kcal</p>
+        </div>
+        <div class="table-divider"></div>
+        <div>
+          <h4>Carbs</h4>
+          <p>0g</p>
+        </div>
+                <div class="table-divider"></div>
+        <div>
+          <h4>Protein</h4>
+          <p>20g</p>
+        </div>
+                <div class="table-divider"></div>
+        <div>
+          <h4>Fat</h4>
+          <p>22g</p>
+        </div>
+                <div class="table-divider"></div>
+      </div>
     </section>
 
+    
     <!-- ================= FOOTER / ATTRIBUTION ================= -->
     <div class="attribution">
+      <p>
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">accama</a>.
+      >. Coded by <a href="https://muhammadhussaini-20-acccama-muhammads-projects.vercel.app/">Accama</a>.
+      </p>
     </div>
   </body>
+</main>
 </html>
